@@ -1,1 +1,1 @@
-This is my [personal website](jzenn.github.io) that can be accessed at.
+This is my [personal website](https://jzenn.github.io).
