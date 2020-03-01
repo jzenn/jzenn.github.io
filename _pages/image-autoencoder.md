@@ -9,6 +9,9 @@ This project implements an autoencoder network that encodes an image to its feat
 representation. The feature representation of an image can be used to conduct style 
 transfer between a content image and a style image.
 
+[Here](https://github.com/jzenn/Image-AutoEncoder) 
+you can find the code for this project.
+
 - The project is written in Python ```3.7``` and uses PyTorch ```1.1``` 
 (also working with PyTorch ```1.3```).
 

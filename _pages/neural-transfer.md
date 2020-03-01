@@ -1,5 +1,5 @@
 ---
-title: "Neural Transfer"
+title: "Neural Style Transfer"
 permalink: /projects/neural-transfer
 ---
 
@@ -8,6 +8,9 @@ permalink: /projects/neural-transfer
 This project implements the neural transfer algorithm proposed by Gatys
 et al. in **(cite Gatys et al.)**. Gradient descent is performed on a noise image to
 match the features of a content image and a style image produced by an encoder network. 
+
+[Here](https://github.com/jzenn/NeuralStyleTransfer) 
+you can find the code for this project.
 
 - The project is written in Python ```3.7``` and uses PyTorch ```1.1``` 
 (also working with PyTorch ```1.3```).

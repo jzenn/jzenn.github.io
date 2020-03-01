@@ -15,6 +15,9 @@ In an autoencoder setting where the module is placed between encoder and decoder
 it is able to produce reasonable style transfer results that get stronger the more 
 moments are aligned.    
 
+[Here](https://github.com/jzenn/MomentAlignment) 
+you can find the code for this project.
+
 - The project is written in Python ```3.7``` and uses PyTorch ```1.1``` 
 (also working with PyTorch ```1.3```).
 
