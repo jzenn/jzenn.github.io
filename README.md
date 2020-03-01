@@ -1,1 +1,1 @@
-This is my [personal website](https://jzenn.github.io).
+[This](https://jzenn.github.io) is my personal website.
