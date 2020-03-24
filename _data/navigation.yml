@@ -1,5 +1,37 @@
 main:
   - title: "About"
-    url: /
+    url: /about
   - title: "Projects"
     url: /projects/
+
+sidebar-framework-documentation:
+- title: "Visualization"
+  children:
+    - title: "matplotlib"
+      url: projects/documentation/matplotlib
+    - title: "plotly"
+      url: projects/documentation/plotly
+    - title: "seaborn"
+      url: projects/documentation/seaborn
+
+- title: "Data Manipulation"
+  children:
+    - title: "pandas"
+      url: projects/documentation/pandas
+
+- title: "Maths and Arrays"
+  children:
+    - title: "numpy"
+      url: projects/documentation/numpy
+
+- title: "Machine Learning"
+  children:
+    - title: "PyTorch"
+      url: projects/documentation/pytorch
+    - title: "Tensorflow"
+      url: projects/documentation/tensorflow
+    - title: "scipy"
+      url: projects/documentation/scipy
+    - title: "sklearn"
+      url: projects/documentation/sklearn
+      
