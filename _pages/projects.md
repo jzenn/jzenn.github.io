@@ -6,6 +6,7 @@ permalink: /projects/
 **This site is under construction.**
 
 Below, you can find some projects I have been working on.
+*Please note that some of these projects are not yet publically available.*
 
 ## [Image Autoencoder](/projects/image-autoencoder)
 
@@ -13,23 +14,25 @@ This project implements an autoencoder network that encodes an image to its feat
 representation. The feature representation of an image can be used to conduct style 
 transfer between a content image and a style image.
 
-## [Moment Alignment](/projects/moment-alignment)
-This project implements an extension to the Adaptive Instance Normalization module 
-from the approach that was proposed by Huang et al. in **(cite Huang et al.)**.
-The moment alignment module is able to not only adapt the first two statistical 
-moments of content feature maps and style feature maps but also to align up to 
-five statistical moments.
-
-## [Neural Transfer](/projects/neural-transfer)
-This project implements an extension to the Adaptive Instance Normalization approach 
-that was proposed by Huang et al. in **(cite Huang et al.)**.
-
 ## [Style Visualizations](/projects/style-visualizations)
-This project implements the a style visualization algorithm proposed by Mahendran
-et al. in **(cite Mahendran et al.)**. Gradient descent is performed on a noise image to
+This project implements a style visualization algorithm proposed by Mahendran et al. 
+Gradient descent is performed on a noise image to
 match the (style) features of a style image produced by an encoder network. 
 
+## [Python Utils](/projects/python-utils)
+This repository is (yet another) helper library for machine learning and deep learning. 
+It is very specific and simple to use and might be helpful for my use-case only.
+
+## [Documentation](/projects/documentation/)
+I started to do some documentation on several python libraries consisting of commands 
+that I felt needing to document. Note that this might be a very specific and personal
+list of commands.
+
+## [Moment Alignment](/projects/moment-alignment)
+*I will provide some more information on this project soon.*
+
+## [Neural Transfer](/projects/neural-transfer)
+*I will provide some more information on this project soon.*
+
 ## [AdaINExt](/projects/ada-in-ext)
-This project implements the neural transfer algorithm proposed by Gatys
-et al. in **(cite Gatys et al.)**. Gradient descent is performed on a noise image to
-match the features of a content image and a style image produced by an encoder network. 
+*I will provide some more information on this project soon.*
