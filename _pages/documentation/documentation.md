@@ -1,9 +1,8 @@
 ---
 title: "Documentation"
-permalink: /projects/documentation
+permalink: /projects/documentation/
 sidebar: 
     nav: sidebar-framework-documentation
-redirect_from: /documentation
 layout: single_without_title
 ---
 
