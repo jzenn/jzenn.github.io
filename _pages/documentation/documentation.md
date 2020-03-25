@@ -1,8 +1,6 @@
 ---
 title: "Documentation"
 permalink: /projects/documentation/
-sidebar: 
-    nav: sidebar-framework-documentation
 layout: single_without_title
 ---
 
