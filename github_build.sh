@@ -15,4 +15,4 @@ rmdir ~/Desktop/_site
 git add .
 git commit -m "site updated at $(date)"
 git push origin master --force
-git checkout -B jekyll
+git checkout jekyll
