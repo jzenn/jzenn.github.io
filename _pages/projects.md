@@ -19,7 +19,7 @@ This project implements a style visualization algorithm proposed by Mahendran et
 Gradient descent is performed on a noise image to
 match the (style) features of a style image produced by an encoder network. 
 
-## [Python Utils](/projects/python-utils)
+## [ML Utils](/projects/ml-utils)
 This repository is (yet another) helper library for machine learning and deep learning. 
 It is very specific and simple to use and might be helpful for my use-case only.
 
