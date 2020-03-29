@@ -3,8 +3,6 @@ title: "Projects"
 permalink: /projects/
 ---
 
-**This site is under construction.**
-
 Below, you can find some projects I have been working on.
 *Please note that some of these projects are not yet publically available.*
 
