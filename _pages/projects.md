@@ -6,6 +6,14 @@ permalink: /projects/
 Below, you can find some projects I have been working on.
 *Please note that some of these projects are not yet publically available.*
 
+
+## [Visualizations on Covid-19 Cases](https://gist.github.com/jzenn/fdbeead6ffa24533f86eac8457d5646e)
+
+This notebook shows some visualizations on the number of Covid-19 cases in Germany.
+You can find different visualizations on the number of cases as well as some curve-fitting
+to the data. Also, there are some plots on the groth rate and the reproduction number 
+after the SEIR model.
+
 ## [Image Autoencoder](/projects/image-autoencoder)
 
 This project implements an autoencoder network that encodes an image to its feature 
