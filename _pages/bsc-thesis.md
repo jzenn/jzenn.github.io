@@ -10,6 +10,6 @@ Below, you can find my Bachelor's Thesis on the topic
 Additionally, you can find the Bachlor's Thesis [here](https://drive.google.com/file/d/1yJg8r5IF2DsR0ICGEzK-K26C4dYoSFPK/preview).
 
 <iframe src="https://drive.google.com/file/d/1yJg8r5IF2DsR0ICGEzK-K26C4dYoSFPK/preview" 
-        width="70%" 
+        width="100%" 
         height="1024">
 </iframe>
