@@ -14,6 +14,11 @@ You can find different visualizations on the number of cases as well as some cur
 to the data. Also, there are some plots on the groth rate and the reproduction number 
 after the SEIR model.
 
+## [Bachlor's Thesis](/projects/bsc-thesis)
+
+You can find my Bachelor's Thesis on the topic *Unsupervised Image-to-Image Translation with 
+Induced Feature Statistics* here.
+
 ## [Image Autoencoder](/projects/image-autoencoder)
 
 This project implements an autoencoder network that encodes an image to its feature 
