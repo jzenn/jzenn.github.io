@@ -4,15 +4,14 @@ permalink: /projects/
 ---
 
 Below, you can find some projects I have been working on.
-*Please note that some of these projects are not yet publically available.*
 
 
-## [Visualizations on Covid-19 Cases](https://gist.github.com/jzenn/fdbeead6ffa24533f86eac8457d5646e)
+## [Cluster](/projects/cluster)
+A clustering package for k-Means Clustering and Spectral Clustering
 
-This notebook shows some visualizations on the number of Covid-19 cases in Germany.
-You can find different visualizations on the number of cases as well as some curve-fitting
-to the data. Also, there are some plots on the groth rate and the reproduction number 
-after the SEIR model.
+## [ML Utils](/projects/ml-utils)
+This repository is (yet another) helper library for machine learning and deep learning. 
+It is very specific and simple to use and might be helpful for my use-case only.
 
 ## [Bachlor's Thesis](/projects/bsc-thesis)
 
@@ -30,20 +29,12 @@ This project implements a style visualization algorithm proposed by Mahendran et
 Gradient descent is performed on a noise image to
 match the (style) features of a style image produced by an encoder network. 
 
-## [ML Utils](/projects/ml-utils)
-This repository is (yet another) helper library for machine learning and deep learning. 
-It is very specific and simple to use and might be helpful for my use-case only.
-
-## [Documentation](/projects/documentation/)
-I started to do some documentation on several python libraries consisting of commands 
-that I felt needing to document. Note that this might be a very specific and personal
-list of commands.
-
 ## [Moment Alignment](/projects/moment-alignment)
-*I will provide some more information on this project soon.*
+This project implements an extension to the Adaptive Instance Normalization module from the approach that was proposed by Huang et al. The moment alignment module is able to not only adapt the first two statistical moments of content feature maps and style feature maps but also to align up to five statistical moments.
 
 ## [Neural Transfer](/projects/neural-transfer)
-*I will provide some more information on this project soon.*
+This project implements the neural transfer algorithm proposed by Gatys et al. Gradient descent is performed on a noise image to match the features of a content image and a style image produced by an encoder network.
 
 ## [AdaINExt](/projects/ada-in-ext)
-*I will provide some more information on this project soon.*
+This project implements an extension to the Adaptive Instance Normalization approach that was proposed by Huang et al.
+

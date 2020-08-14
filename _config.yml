@@ -26,7 +26,7 @@ breadcrumbs              : true
 author:
   name             : "Johannes Zenn"
   avatar           : "/assets/images/bio-photo-j.jpeg"
-  bio              : "student of machine learning, interested in machine learning and computer vision"
+  bio              : "student of machine learning, interested in machine learning"
   location         : "Tübingen, Germany"
   links:
     - label: "Website"
