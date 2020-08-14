@@ -1,7 +1,7 @@
 # checkout jekyll branch
 git checkout jekyll
 # build _site
-bundle exec jekyll build
+bundle exec jekyll build --trace
 
 # move site to tmp
 mv _site ~/Desktop/
