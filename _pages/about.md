@@ -7,7 +7,7 @@ author_profile: true
 
 I am Johannes Zenn, a machine learning student at the University of Tübingen, Germany. 
 
-Currently, my studies focus on probabilistic and statistical machine learning methods and applications as well as deep learning.
+Currently, my studies focus on probabilistic and statistical machine learning methods with applications as well as deep learning.
 
 I finished my undergraduate studies in computer science at the University of Tübingen. My studies focussed on deep learning, computer vision and algorithms. 
 
