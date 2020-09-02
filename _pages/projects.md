@@ -13,6 +13,9 @@ A clustering package for k-Means Clustering and Spectral Clustering
 This repository is (yet another) helper library for machine learning and deep learning. 
 It is very specific and simple to use and might be helpful for my use-case only.
 
+## [Minima-Slides](/projects/minima-slides)
+This projects wants to provide modern and simplistic LaTeX Beamer slides for professional and private use.
+
 ## [Bachlor's Thesis](/projects/bsc-thesis)
 
 You can find my Bachelor's Thesis on the topic *Unsupervised Image-to-Image Translation with 
