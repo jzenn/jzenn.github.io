@@ -35,6 +35,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jzenn"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/johannes-zenn/"
 
 
 # Site Footer
@@ -46,6 +49,9 @@ footer:
     - label: "jzenn"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/johannes-zenn/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
