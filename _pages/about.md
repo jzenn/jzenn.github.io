@@ -16,8 +16,8 @@ My studies focussed on deep learning, computer vision and algorithms.
 
 Time | Experience
 --- | ---
-2021 - Present | Working Student at [DeepScenario](https://www.deepscenario.com), Area: computer vision and deep learning.
-2018 - 2021 | Working Student at [Schwarz IT](https://www.it.schwarz/), Area: natural language data clustering, data analysis and reporting
+2021 - Present | Working Student at [DeepScenario](https://www.deepscenario.com), Area: computer vision, deep learning
+2018 - 2021 | Working Student at [Schwarz IT](https://www.it.schwarz/), Tasks: natural language data clustering, data analysis, reporting
 2018 | Teaching Assistant at University of Tübingen, Tasks: grading of exercise sheets, weekly tutorial
 2017 - 2018 | Teaching Assistant at University of Tübingen, Tasks: grading of exercise sheets, weekly tutorial
 
