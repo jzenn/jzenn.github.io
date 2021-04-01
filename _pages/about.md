@@ -25,6 +25,6 @@ Time | Experience
 
 Time | Education
 --- | ---
-2019 - Present | Master’s programme: *Machine Learning*, Eberhard Karls Universität of Tübingen, third semester
+2019 - Present | Master’s programme: *Machine Learning*, Eberhard Karls Universität of Tübingen, fourth semester
 2016 - 2019 | Bachelor’s degree: *Computer Science*, Eberhard Karls Universität of Tübingen
 2008 - 2016 | Abitur, Theodor Heuss Gymnasium Heilbronn
