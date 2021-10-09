@@ -5,12 +5,12 @@ permalink: /about/
 author_profile: true
 ---
 
-I am a machine learning student at the University of Tübingen, Germany.
+I am a machine learning student at the University of Tübingen, Germany. 
+My studies focus on machine learning methods and applications. 
+I am currently writing my master thesis with [Prof. Dr. Robert Bamler](https://robamler.github.io).
 
-Currently, my studies focus on machine learning methods and applications.
-
-I finished my undergraduate studies in computer science at the University of Tübingen.
-My studies focussed on deep learning, computer vision and algorithms.
+I did my undergraduate studies in computer science at the University of Tübingen.
+My studies focused on deep learning, computer vision and algorithms.
 
 ## Experience
 
@@ -25,6 +25,6 @@ Time | Experience
 
 Time | Education
 --- | ---
-2019 - Present | Master’s programme: *Machine Learning*, Eberhard Karls Universität of Tübingen, fourth semester
+2019 - Present | Master’s programme: *Machine Learning*, Eberhard Karls Universität of Tübingen, fifth semester
 2016 - 2019 | Bachelor’s degree: *Computer Science*, Eberhard Karls Universität of Tübingen
 2008 - 2016 | Abitur, Theodor Heuss Gymnasium Heilbronn

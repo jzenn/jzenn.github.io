@@ -25,7 +25,7 @@ breadcrumbs              : true
 # Site Author
 author:
   name             : "Johannes Zenn"
-  avatar           : "/assets/images/bio-photo-j.jpeg"
+  avatar           : "/assets/images/bio-photo-j.jpg"
   bio              : "student of machine learning, interested in machine learning"
   location         : "Tübingen, Germany"
   links:
@@ -49,7 +49,7 @@ footer:
     - label: "jzenn"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jzenn"
-    - label: "LinkedIn"
+    - label: "Johannes Zenn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://linkedin.com/in/johannes-zenn/"
     # - label: "Instagram"

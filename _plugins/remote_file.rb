@@ -14,7 +14,8 @@ module Jekyll
       if url =~ URI::regexp
 
         # grab the remote document with nokogiri
-        doc = Nokogiri::HTML(open(url))
+        #doc = Nokogiri::HTML(open(url))
+        doc = Nokogiri::HTML(URI.open(url).read)
 
         # get the text inside body
         @node = doc.xpath('//text()')
