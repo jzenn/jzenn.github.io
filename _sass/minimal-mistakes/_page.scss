@@ -39,12 +39,10 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -86,6 +84,10 @@ body {
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
+  }
+
+  p {
+    text-align: justify;
   }
 
 	h1, h2, h3, h4, h5, h6 {
