@@ -1,0 +1,14 @@
+---
+---
+<!-- <a href="{{ entry.url }}" target="_blank">{{ reference }}</a> -->
+
+{{ entry.title }}.
+<br/>
+{{ entry.author | replace_first: 'Zenn, Johannes', '<b>Zenn, Johannes</b>' }}
+<br/>
+<i>Preprint {{ entry.year }}</i>.
+<p id="{{ entry.url }}-text" hidden>{{ entry.bibtex }}</p>
+<br/>
+<a href="{{ entry.url }}" class="btn btn--primary" target="_blank">PDF</a>
+&nbsp;
+<a class="btn btn--primary" onclick="copyToClipboard('{{ entry.url }}')">Copy BibTeX</a>
