@@ -26,7 +26,7 @@ breadcrumbs              : true
 author:
   name             : "Johannes Zenn"
   avatar           : "/assets/images/bio-photo-j.jpg"
-  bio              : "student of machine learning, interested in machine learning"
+  bio              : "PhD Student in Machine Learning @ University of Tübingen"
   location         : "Tübingen, Germany"
   links:
     - label: "Website"
@@ -38,20 +38,23 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://linkedin.com/in/johannes-zenn/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/johanneszenn"
 
 
 # Site Footer
 footer:
   links:
-    # - label: "Twitter"
-    #   icon: "fab fa-fw fa-twitter-square"
-    #   url: "https://twitter.com/"
     - label: "jzenn"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jzenn"
     - label: "Johannes Zenn"
       icon: "fab fa-fw fa-linkedin-in"
       url: "https://linkedin.com/in/johannes-zenn/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/johanneszenn"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
@@ -137,6 +140,7 @@ plugins:
   # - jekyll-feed
   - jekyll-include-cache
   - jekyll-redirect-from
+  - jekyll/scholar
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -182,6 +186,14 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+# scholar
+scholar:
+  bibliography_template: bib
+  group_by: year
+  group_order: descending
+  bibliography_item_tag: none
 
 
 # Collections
