@@ -4,7 +4,7 @@ title: "Home"
 author_profile: true
 ---
 
-I am an incoming PhD student in the [Data Science and Machine Learning](https://robamler.github.io) group supervised by Robert Bamler. 
+I am a PhD student in the [Data Science and Machine Learning](https://robamler.github.io) group supervised by Robert Bamler. 
 I am interested in deep probabilistic models and applications of probabilistic machine learning in science.
 
 I recently finished my [Master's thesis](https://nc.mlcloud.uni-tuebingen.de/index.php/s/zmMGsi3jMP68pkc) on the topic *Machine Learning for Thermodynamics: Equipping Data Driven Prediction Methods with Chemical Prior Knowledge*.
