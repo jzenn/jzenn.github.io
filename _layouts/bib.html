@@ -2,13 +2,14 @@
 ---
 <!-- <a href="{{ entry.url }}" target="_blank">{{ reference }}</a> -->
 
-{{ entry.title }}.
-<br/>
-{{ entry.author | replace_first: 'Zenn, Johannes', '<b>Zenn, Johannes</b>' }}
-<br/>
-<i>Preprint {{ entry.year }}</i>.
+<div >{{ entry.title }}.</div>
+<div style="font-weight: lighter;">{{ entry.author | replace_first: 'Zenn, Johannes', '<span style="text-decoration: underline">Zenn, Johannes</span>' }}</div>
+<div style="font-weight: lighter;">In <span style="font-style: italic;"><span>{{ entry.journal }}</span> {{ entry.year }}</span>.</div>
 <p id="{{ entry.url }}-text" hidden>{{ entry.bibtex }}</p>
-<br/>
-<a href="{{ entry.url }}" class="btn btn--primary" target="_blank">PDF</a>
+<a href="{{ entry.url }}"><i class="fa fa-file"></i></a>
+{% if entry.github %}
+  &nbsp; <a href="{{ entry.github }}"><i class="fab fa-fw fa-github"></i></a>
+{% endif %}
 &nbsp;
-<a class="btn btn--primary" onclick="copyToClipboard('{{ entry.url }}')">Copy BibTeX</a>
+<!-- <a class="btn btn--outline" onclick="copyToClipboard('{{ entry.url }}')">BibTeX <i class="fab fa fa-copy"></i></a> -->
+<a onclick="copyToClipboard('{{ entry.url }}')"><i class="fab fa fa-copy"></i></a>
