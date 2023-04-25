@@ -4,12 +4,14 @@ title: "Home"
 author_profile: true
 ---
 
-I am a PhD student at [University of Tübingen](https://uni-tuebingen.de/en) and [International Max Planck Research School for Intelligent Systems](https://imprs.is.mpg.de) supervised by [Robert Bamler](https://robamler.github.io). 
-I am interested in flexible and efficient inference methods for deep probabilistic models and applications of probabilistic machine learning in science.
+I am a PhD student at [University of Tübingen](https://uni-tuebingen.de/en) and the [International Max Planck Research School for Intelligent Systems](https://imprs.is.mpg.de) supervised by [Robert Bamler](https://robamler.github.io). 
+I am interested in flexible and efficient inference methods for deep probabilistic models.
+Additionaly, I am interested in applications of probabilistic machine learning in science.
 My PhD is funded by the [Cluster of Excellence Machine Learning](https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/home/).
 
-Currently, I am investigating connections between (Differentiable) Annealed Importance Sampling and (Differentiable) Markov Chain Monte Carlo Sampling Methods. 
-My latest work [Resampling Gradients Vanish in Differentiable Sequential Monte Carlo Samplers](https://openreview.net/forum?id=kBkou5ucR_d) (TinyPaper at ICLR 2023) explains how a maximal Effective Sample Size influences gradients due to resampling (spoiler: you do not need them).
+Currently, I am investigating connections between (Differentiable) Annealed Importance Sampling and (Differentiable) Markov Chain Monte Carlo Sampling methods. 
+My latest work [Resampling Gradients Vanish in Differentiable Sequential Monte Carlo Samplers](https://openreview.net/forum?id=kBkou5ucR_d) explains how a maximal Effective Sample Size influences gradients due to resampling (spoiler: you do not need them).
+A poster that I presented at ICLR 2023 can be found [here](https://nc.mlcloud.uni-tuebingen.de/index.php/s/pcsRa74ArmXirz4).
 
 Last year, I finished my [Master's thesis](https://nc.mlcloud.uni-tuebingen.de/index.php/s/zmMGsi3jMP68pkc) on the topic *Machine Learning for Thermodynamics: Equipping Data Driven Prediction Methods with Chemical Prior Knowledge*.
 The work proposes hybrid models for the field of physical chemistry and thermodynamics that integrate chemical knowledge into a data-driven probabilistic machine learning model.

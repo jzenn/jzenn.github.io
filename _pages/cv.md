@@ -31,7 +31,7 @@ permalink: /cv/
 	*pull requests #364 and #374*
 
 - *February 2018 - February 2021* \
-	**Working Student** at [Schwarz IT GmbH & CO. KG](https://it.schwarz/en), Team “Digitale Sprachassistenten” (digital language assistants) \
+	**Working Student** at [Schwarz IT GmbH & CO. KG](https://it.schwarz/en), Team “Digitale Sprachassistenten” \
 	*responsible for natural language data clustering, quality reports of chatbot systems*
 
 - *May 2017 - August 2018* \

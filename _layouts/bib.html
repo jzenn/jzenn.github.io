@@ -4,7 +4,7 @@
 
 <div >{{ entry.title }}.</div>
 <div style="font-weight: lighter;">{{ entry.author | replace_first: 'Zenn, Johannes', '<span style="text-decoration: underline">Zenn, Johannes</span>' }}</div>
-<div style="font-weight: lighter;">In <span style="font-style: italic;"><span>{{ entry.journal }}</span> {{ entry.year }}</span>.</div>
+<div style="font-weight: lighter;">In <span style="font-style: italic;"><span>{{ entry.journal }},</span> {{ entry.year }}</span>.</div>
 <p id="{{ entry.url }}-text" hidden>{{ entry.bibtex }}</p>
 <a style="text-decoration: none; font-weight: lighter;" href="{{ entry.url }}"><i class="fa fa-file"></i>&nbsp;Paper&nbsp;</a>
 {% if entry.github %}
