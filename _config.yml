@@ -26,7 +26,7 @@ breadcrumbs              : true
 author:
   name             : "Johannes Zenn"
   avatar           : "/assets/images/bio-photo-j.jpg"
-  bio              : "PhD Student in Machine Learning @ University of Tübingen"
+  bio              : "PhD Student in Machine Learning @ University of Tübingen & IMPRS-IS"
   location         : "Tübingen, Germany"
   links:
     # - label: "Website"

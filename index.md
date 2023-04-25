@@ -4,7 +4,7 @@ title: "Home"
 author_profile: true
 ---
 
-I am a PhD student at University of Tübingen supervised by [Robert Bamler](https://robamler.github.io). 
+I am a PhD student at [University of Tübingen](https://uni-tuebingen.de/en) and [International Max Planck Research School for Intelligent Systems](https://imprs.is.mpg.de) supervised by [Robert Bamler](https://robamler.github.io). 
 I am interested in flexible and efficient inference methods for deep probabilistic models and applications of probabilistic machine learning in science.
 My PhD is funded by the [Cluster of Excellence Machine Learning](https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/home/).
 
