@@ -6,10 +6,13 @@
 <div style="font-weight: lighter;">{{ entry.author | replace_first: 'Zenn, Johannes', '<span style="text-decoration: underline">Zenn, Johannes</span>' }}</div>
 <div style="font-weight: lighter;">In <span style="font-style: italic;"><span>{{ entry.journal }}</span> {{ entry.year }}</span>.</div>
 <p id="{{ entry.url }}-text" hidden>{{ entry.bibtex }}</p>
-<a href="{{ entry.url }}"><i class="fa fa-file"></i></a>
+<a style="text-decoration: none; font-weight: lighter;" href="{{ entry.url }}"><i class="fa fa-file"></i>&nbsp;Paper&nbsp;</a>
 {% if entry.github %}
-  &nbsp; <a href="{{ entry.github }}"><i class="fab fa-fw fa-github"></i></a>
+  &nbsp; <a style="text-decoration: none; font-weight: lighter;" href="{{ entry.github }}"><i class="fab fa-fw fa-github"></i>&nbsp;GitHub&nbsp;</a>
+{% endif %}
+{% if entry.poster %}
+  &nbsp; <a style="text-decoration: none; font-weight: lighter;" href="{{ entry.poster }}"><i class="fa fa-clipboard"></i>&nbsp;Poster&nbsp;</a>
 {% endif %}
 &nbsp;
 <!-- <a class="btn btn--outline" onclick="copyToClipboard('{{ entry.url }}')">BibTeX <i class="fab fa fa-copy"></i></a> -->
-<a onclick="copyToClipboard('{{ entry.url }}')"><i class="fab fa fa-copy"></i></a>
+<a style="text-decoration: none; font-weight: lighter;" onclick="copyToClipboard('{{ entry.url }}')"><i class="fab fa fa-copy"></i>&nbsp;BibTex&nbsp;</a>
