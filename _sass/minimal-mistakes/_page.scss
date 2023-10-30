@@ -16,7 +16,6 @@
 
   @include breakpoint($x-large) {
     max-width: $max-width;
-    padding-right: $right-sidebar-width;
   }
 }
 
@@ -40,10 +39,12 @@ body {
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
+    padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
+    padding-right: $right-sidebar-width;
   }
 
   .page__inner-wrap {
@@ -82,13 +83,11 @@ body {
 }
 
 .page__content {
+  text-align: justify;
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
-  }
-
-  p {
-    text-align: justify;
   }
 
 	h1, h2, h3, h4, h5, h6 {
@@ -302,6 +301,12 @@ body {
   text-transform: uppercase;
 }
 
+.page__meta-sep::before {
+  content: "\2022";
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
 /*
    Page taxonomy
    ========================================================================== */
@@ -355,11 +360,11 @@ body {
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: lighten($text-color, 60%);
+  color: $muted-text-color;
 }
 
 .taxonomy__count {
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
 }
 
 .taxonomy__index {
@@ -392,7 +397,7 @@ body {
 .back-to-top {
   display: block;
   clear: both;
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: right;

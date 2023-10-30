@@ -2,23 +2,7 @@
    ARCHIVE
    ========================================================================== */
 
-.pdf_view {
-    margin-top: 1em;
-    margin-bottom: 2em;
-  
-    @include breakpoint($large) {
-      float: right;
-      width: calc(100% - #{$right-sidebar-width-narrow});
-      padding-right: 0em; //$right-sidebar-width-narrow;
-    }
-  
-    @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
-      padding-right: 0em; //$right-sidebar-width;
-    }
-  }
-
-   .archive {
+.archive {
   margin-top: 1em;
   margin-bottom: 2em;
 
@@ -48,7 +32,7 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0;
+  margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
   font-size: $type-size-5;
   color: $muted-text-color;
@@ -215,6 +199,14 @@
   .page__meta {
     margin: 0 0 4px;
     font-size: 0.6em;
+  }
+
+  .page__meta-sep {
+    display: block;
+
+    &::before {
+      display: none;
+    }
   }
 
   .archive__item-title {
