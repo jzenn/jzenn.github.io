@@ -201,8 +201,11 @@ compress_html:
 scholar:
   bibliography_template: bib
   group_by: year
-  group_order: descending
+  group_order: descendings
   bibliography_item_tag: none
+  first_name: Johannes
+  last_name: Zenn
+  equal_contribution: "*"
 
 
 # Collections
