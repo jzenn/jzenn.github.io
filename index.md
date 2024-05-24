@@ -16,7 +16,7 @@ Our [paper](https://arxiv.org/abs/2312.02168) at the [NeurIPS 2023 Workshop on D
  
 # News
 
-- **June 2024**: I will present our [paper](hhttps://arxiv.org/abs/2405.14840) at ICML 2024 in person. Chat with me in Vienna! I will also present the project at the [Approximate Inference in Theory and Practice](https://sites.google.com/essec.edu/approximate-inference-conf/) workshop in Paris!
+- **June 2024**: I will present our [paper](hhttps://arxiv.org/abs/2405.14840) at ICML 2024 and AABI 2024 in person. Chat with me in Vienna! I will also present the project at the [Approximate Inference in Theory and Practice](https://sites.google.com/essec.edu/approximate-inference-conf/) workshop in Paris!
 - **May 2024**: Our paper [Differentiable Annealed Importance Sampling Minimizes The Jensen-Shannon Divergence Between Initial and Target Distribution](https://arxiv.org/abs/2405.14840) has been accepted at ICML 2024!
 - **November 2023**: I am visiting NeurIPS 2023 in person. Talk to me in New Orleans!
 - **October 2023**: Our paper [The SVHN Dataset Is Deceptive for Probabilistic Generative Models Due to a Distribution Mismatch](https://arxiv.org/abs/2312.02168) has been accepted at the [NeurIPS 2023 Workshop on Distribution Shifts](https://sites.google.com/view/distshift2023)! Check out the [project page](./svhn-remix)!
