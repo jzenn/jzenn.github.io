@@ -1,0 +1,10 @@
+.fa-fw.fa-twitter-square{
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.fa-fw.fa-twitter-square::before{
+	content: "𝕏";
+	font-size: 1.2em;
+
+}

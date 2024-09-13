@@ -6,9 +6,11 @@ author_profile: true
 
 I am a PhD student at [University of Tübingen](https://uni-tuebingen.de/en) and the [International Max Planck Research School for Intelligent Systems](https://imprs.is.mpg.de) supervised by [Robert Bamler](https://robamler.github.io). 
 My PhD is funded by the [Cluster of Excellence Machine Learning](https://uni-tuebingen.de/en/research/core-research/cluster-of-excellence-machine-learning/home/).
-I am interested in deep (probabilistic) models, flexible and efficient inference methods, and data compression.
+I am interested in deep (probabilistic) models, flexible and efficient inference methods for large (language) models, and data compression.
+<br/>
+*If you are a Bachelor's or Master's student and interested in writing a thesis in our group, please reach out!*
 
-Recently, I have been working with Differentiable Annealed Importance Sampling (DAIS). Our latest [ICML 2024 paper](https://arxiv.org/abs/2405.14840) shows that DAIS minimizes the Jensen-Shannon divergence between initial and target distribution and investigates a useful inference method utilizing the learned initial distribution.
+Recently, I have been working with Differentiable Annealed Importance Sampling (DAIS). Our latest [ICML 2024 paper](https://arxiv.org/abs/2405.14840) shows that DAIS minimizes the symmetrized Kullback-Leibler divergence between initial and target distribution and investigates a useful inference method utilizing the learned initial distribution.
 In our [ICLR 2023 Tiny Paper](https://arxiv.org/abs/2304.14390) we equip DAIS with a resampling step and explain how a maximal Effective Sample Size influences gradients due to resampling (spoiler: you do not need them).
 
 Our [paper](https://arxiv.org/abs/2312.02168) at the [NeurIPS 2023 Workshop on Distribution Shifts](https://sites.google.com/view/distshift2023) finds that the SVHN dataset suffers from a distribution mismatch between the training set and test set that impacts probabilistic generative models. A new canonical split can be downloaded from the [project page](/svhn-remix).
@@ -16,8 +18,9 @@ Our [paper](https://arxiv.org/abs/2312.02168) at the [NeurIPS 2023 Workshop on D
  
 # News
 
-- **June 2024**: I will present our [paper](hhttps://arxiv.org/abs/2405.14840) at ICML 2024 and AABI 2024 in person. Chat with me in Vienna! I will also present the project at the [Approximate Inference in Theory and Practice](https://sites.google.com/essec.edu/approximate-inference-conf/) workshop in Paris!
-- **May 2024**: Our paper [Differentiable Annealed Importance Sampling Minimizes The Jensen-Shannon Divergence Between Initial and Target Distribution](https://arxiv.org/abs/2405.14840) has been accepted at ICML 2024!
+- **September 2024**: I am excited to be joining the group of [Roger Grosse](http://www.cs.toronto.edu/~rgrosse/) for the Vector research internship in February 2025! Please reach out if you are based in the Toronto area!
+- **June 2024**: I will present our [paper](https://arxiv.org/abs/2405.14840) at ICML 2024 and AABI 2024 in person. Chat with me in Vienna! I will also present the project at the [Approximate Inference in Theory and Practice](https://sites.google.com/essec.edu/approximate-inference-conf/) workshop in Paris!
+- **May 2024**: Our paper [Differentiable Annealed Importance Sampling Minimizes The Symmetrized Kullback-Leibler Divergence Between Initial and Target Distribution](https://arxiv.org/abs/2405.14840) has been accepted at ICML 2024!
 - **November 2023**: I am visiting NeurIPS 2023 in person. Talk to me in New Orleans!
 - **October 2023**: Our paper [The SVHN Dataset Is Deceptive for Probabilistic Generative Models Due to a Distribution Mismatch](https://arxiv.org/abs/2312.02168) has been accepted at the [NeurIPS 2023 Workshop on Distribution Shifts](https://sites.google.com/view/distshift2023)! Check out the [project page](./svhn-remix)!
 - **May 2023**: I am visiting ICLR 2023 in person. Come and talk to me in Kigali, Rwanda!

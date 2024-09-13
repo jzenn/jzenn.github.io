@@ -6,7 +6,7 @@ permalink: /projects/
 All projects can be found on my [GitHub](https://github.com/jzenn) page.
 
 ## [DAIS0](/projects/dais0)
-The code for our work [Differentiable Annealed Importance Sampling Minimizes The Jensen-Shannon Divergence Between Initial and Target Distribution](https://arxiv.org/abs/2405.14840). We investigate the initial distribution of differentiable annealed importance sampling and find that it minimizes the Jensen-Shannon divergence between its initial distribution and target distribution.
+The code for our work [Differentiable Annealed Importance Sampling Minimizes The Symmetrized Kullback-Leibler Divergence Between Initial and Target Distribution](https://arxiv.org/abs/2405.14840). We investigate the initial distribution of differentiable annealed importance sampling and find that it minimizes the symmetrized Kullback-Leibler divergence between its initial distribution and target distribution.
 Motivated by this insight we use the initial distribution for variational inference.
 
 ## [SVHN-Remix](/svhn-remix)
