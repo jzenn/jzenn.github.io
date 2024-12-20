@@ -8,3 +8,23 @@
 	font-size: 1.2em;
 
 }
+
+.custom-bluesky-icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  content: url('/assets/svgs/bluesky_media_kit_logo_svgs.svg');
+  vertical-align: -0.5em;
+  margin-left: -0.35em;
+  margin-right: -0.35em;
+}
+
+.custom-bluesky-icon-white {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  content: url('/assets/svgs/bluesky_media_kit_logo_svgs_white.svg');
+  vertical-align: -0.5em;
+  margin-left: -0.5em;
+  margin-right: -0.25em;
+}

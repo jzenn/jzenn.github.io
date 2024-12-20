@@ -29,9 +29,6 @@ author:
   bio              : "PhD Student in Machine Learning @ University of Tübingen & IMPRS-IS"
   location         : "Tübingen, Germany"
   links:
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://jzenn.github.io"
     - label: "Mail"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:johannes.zenn@gmail.com"
@@ -41,32 +38,37 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jzenn"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://linkedin.com/in/johannes-zenn/"
+    - label: Bluesky
+      icon: "custom-bluesky-icon"
+      url: "https://bsky.app/profile/johanneszenn.bsky.social"
     - label: "X / Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/johanneszenn"
-
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/johannes-zenn/"
 
 # Site Footer
 footer:
   links:
+    - label: "Mail"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:johannes.zenn@gmail.com"
     - label: "Scholar"
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.de/citations?user=QYZmWP8AAAAJ&hl=en"
     - label: "Github"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jzenn"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
-      url: "https://linkedin.com/in/johannes-zenn/"
+    - label: Bluesky
+      icon: "custom-bluesky-icon-white"
+      url: "https://bsky.app/profile/johanneszenn.bsky.social"
     - label: "X / Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/johanneszenn"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/in/johannes-zenn/"
 
 
 # Reading Files
