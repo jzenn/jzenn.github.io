@@ -11,20 +11,17 @@
 
 .custom-bluesky-icon {
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 1em;
+  height: 1em;
   content: url('/assets/svgs/bluesky_media_kit_logo_svgs.svg');
-  vertical-align: -0.5em;
-  margin-left: -0.35em;
-  margin-right: -0.35em;
+  margin-bottom: -0.1em;
+  margin-right: 0.25em;
 }
 
 .custom-bluesky-icon-white {
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 1em;
+  height: 1em;
   content: url('/assets/svgs/bluesky_media_kit_logo_svgs_white.svg');
-  vertical-align: -0.5em;
-  margin-left: -0.5em;
-  margin-right: -0.25em;
+  margin-bottom: -0.1em;
 }
