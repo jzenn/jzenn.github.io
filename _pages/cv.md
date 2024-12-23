@@ -7,7 +7,7 @@ permalink: /cv/
 
 - *July 2022 - Today* \
 	**PhD in Machine Learning** at [University of Tübingen](https://uni-tuebingen.de/en)\
-	supervised by Prof. Dr. Robert Bamler
+	supervised by [Prof. Dr. Robert Bamler](https://robamler.github.io)
 
 - *October 2019 - June 2022* \
 	**Master’s Degree: Machine Learning** at [University of Tübingen](https://uni-tuebingen.de/en)\
@@ -21,6 +21,14 @@ permalink: /cv/
 
 
 ## Work Experience
+
+- *February 2025 - June 2025* \
+	**Research Intern** at [Vector Institute](https://vectorinstitute.ai) \
+	supervised by [Prof. Dr. Roger Grosse](http://www.cs.toronto.edu/~rgrosse/)
+
+- *July 2022 - Today* \
+	**PhD Student** at [University of Tübingen](https://uni-tuebingen.de/en) \
+	supervised by [Prof. Dr. Robert Bamler](https://robamler.github.io)
 
 - *April 2021 - May 2022* \
 	**Working Student** at [DeepScenario GmbH](https://www.deepscenario.com) \
