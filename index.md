@@ -10,14 +10,24 @@ I am interested in deep (probabilistic) models, flexible and efficient inference
 <br/>
 *If you are a Bachelor's or Master's student and interested in writing a thesis in our group, please reach out!*
 
-Recently, I have been working with Differentiable Annealed Importance Sampling (DAIS). Our latest [ICML 2024 paper](https://arxiv.org/abs/2405.14840) shows that DAIS minimizes the symmetrized Kullback-Leibler divergence between initial and target distribution and investigates a useful inference method utilizing the learned initial distribution.
-In our [ICLR 2023 Tiny Paper](https://arxiv.org/abs/2304.14390) we equip DAIS with a resampling step and explain how a maximal Effective Sample Size influences gradients due to resampling (spoiler: you do not need them).
+<!-- Currently, I am interning in [Roger Grosse's](http://www.cs.toronto.edu/~rgrosse/) group for the Vector research internship.
+Please reach out! -->
 
-Our [paper](https://arxiv.org/abs/2312.02168) at the [NeurIPS 2023 Workshop on Distribution Shifts](https://sites.google.com/view/distshift2023) finds that the SVHN dataset suffers from a distribution mismatch between the training set and test set that impacts probabilistic generative models. A new canonical split can be downloaded from the [project page](/svhn-remix).
 
  
 # News
 
+<!-- - **January 2025**: We finally managed to to find the time to publish parts of my Master's thesis [as a paper](https://arxiv.org/abs/2406.08075) at a chemistry journal. 
+If you like applications of machine learning to science, check it out. -->
+<!-- @article{zenn2024balancing,
+  title={Balancing Molecular Information and Empirical Data in the Prediction of Physico-Chemical Properties},
+  author={Zenn, Johannes and Gond, Dominik and Jirasek, Fabian and Bamler, Robert},
+  journal={Digital Discovery},
+  year={2025},
+  url={https://arxiv.org/abs/2406.08075},
+  github={https://github.com/jzenn/gnn-mcm}
+} -->
+- **December 2024**: Our paper, [A Note on Generalization in Variational Autoencoders: How Effective Is Synthetic Data and Overparameterization?](https://openreview.net/pdf?id=bwyHf5eery) has been accepted at TMLR following a smooth and constructive review process! Check it out if you (still) like VAEs!
 - **September 2024**: I am excited to be joining the group of [Roger Grosse](http://www.cs.toronto.edu/~rgrosse/) for the Vector research internship in February 2025! Please reach out if you are based in the Toronto area!
 - **June 2024**: I will present our [paper](https://arxiv.org/abs/2405.14840) at ICML 2024 and AABI 2024 in person. Chat with me in Vienna! I will also present the project at the [Approximate Inference in Theory and Practice](https://sites.google.com/essec.edu/approximate-inference-conf/) workshop in Paris!
 - **May 2024**: Our paper [Differentiable Annealed Importance Sampling Minimizes The Symmetrized Kullback-Leibler Divergence Between Initial and Target Distribution](https://arxiv.org/abs/2405.14840) has been accepted at ICML 2024!
