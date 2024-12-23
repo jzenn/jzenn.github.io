@@ -1,0 +1,550 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Differentiable Sequential Monte Carlo Samplers - Johannes Zenn</title>
+<meta name="description" content="Personal Website of Johannes Zenn">
+
+
+  <meta name="author" content="Johannes Zenn">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Johannes Zenn">
+<meta property="og:title" content="Differentiable Sequential Monte Carlo Samplers">
+<meta property="og:url" content="http://localhost:4000/projects/dsmcs">
+
+
+  <meta property="og:description" content="Personal Website of Johannes Zenn">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/projects/dsmcs">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Johannes Zenn",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Johannes Zenn Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#074161">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- scripts -->
+<script src="/assets/js/clipboard.js"></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single_without_title">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Johannes Zenn
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/publications">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000//" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/projects" itemprop="item"><span itemprop="name">Projects</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Differentiable Sequential Monte Carlo Samplers</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo-j.jpg" alt="Johannes Zenn" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Johannes Zenn</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>PhD Student in Machine Learning @ University of Tübingen &amp; IMPRS-IS</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Tübingen, Germany</span>
+        </li>
+      
+
+      
+        
+          <li>
+            <a href="mailto:johannes.zenn@gmail.com" rel="nofollow noopener noreferrer">
+                <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+              <span class="label">Mail</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://scholar.google.de/citations?user=QYZmWP8AAAAJ&hl=en" rel="nofollow noopener noreferrer">
+                <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
+              <span class="label">Scholar</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/jzenn" rel="nofollow noopener noreferrer">
+                <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://bsky.app/profile/johanneszenn.bsky.social" rel="nofollow noopener noreferrer">
+                <i class="custom-bluesky-icon" aria-hidden="true"></i>
+              <span class="label">Bluesky</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://x.com/johanneszenn" rel="nofollow noopener noreferrer">
+                <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i>
+              <span class="label">X / Twitter</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://linkedin.com/in/johannes-zenn/" rel="nofollow noopener noreferrer">
+                <i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i>
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <!-- <meta itemprop="headline" content="Differentiable Sequential Monte Carlo Samplers"> -->
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Differentiable Sequential Monte Carlo Samplers
+</h1> -->
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>You can find the code for this project <a href="https://github.com/jzenn/dsmcs">here</a>.</p>
+
+<h1 id="resampling-gradients-vanish-in-differentiable-sequential-monte-carlo-samplers-tinypaper--iclr-2023">Resampling Gradients Vanish in Differentiable Sequential Monte Carlo Samplers <a href="https://openreview.net/forum?id=kBkou5ucR_d">(TinyPaper @ ICLR 2023)</a></h1>
+
+<p><a href="https://arxiv.org/abs/2304.14390"><img src="https://img.shields.io/badge/Paper-PDF-red?style=flat&amp;logo=arXiv&amp;logoColor=red" alt="arxiv-link" /></a>
+  <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/Made%20with-PyTorch-brightgreen" alt="made-with-pytorch" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a></p>
+
+<p>Johannes Zenn   ·  
+  Robert Bamler</p>
+
+<h2 id="about-the-project">About The Project</h2>
+<p>This is the official GitHub repository for our work <a href="https://openreview.net/forum?id=kBkou5ucR_d">Resampling Gradients Vanish in Differentiable Sequential Monte Carlo Samplers</a> where we propose a differentiable Sequential Monte Carlo Sampler and show that there is no need for differentiating the resampling operation if the effective sample size is maximal (which we find to be the case consistently).</p>
+
+<p>&gt;Annealed Importance Sampling (AIS) moves particles along a Markov chain from a tractable initial distribution to an intractable target distribution. The recently proposed Differentiable AIS (DAIS) (Geffner &amp; Domke, 2021; Zhang et al., 2021) enables efficient optimization of the transition kernels of AIS and of the distributions. However, we observe a low effective sample size in DAIS, indicating degenerate distributions. We thus propose to extend DAIS by a resampling step inspired by Sequential Monte Carlo. Surprisingly, we find empirically—and can explain theoretically—that it is not necessary to differentiate through the resampling step which avoids gradient variance issues observed in similar approaches for Particle Filters (Maddison et al., 2017; Naesseth et al., 2018; Le et al., 2018).</p>
+
+<p>The code base was heavily extended and rewritten based on the DAIS code base by Zhang et al. (2021) which was taken from their <a href="https://openreview.net/forum?id=6rqjgrL7Lq">OpenReview submission</a>.</p>
+
+<h2 id="environment">Environment:</h2>
+
+<ul>
+  <li>tested with Python 3.10 (lower version might work as well);</li>
+  <li>dependencies can be found in <code class="language-plaintext highlighter-rouge">requirements.txt</code></li>
+  <li><code class="language-plaintext highlighter-rouge">wandb</code> is not necessarily required (provide <code class="language-plaintext highlighter-rouge">--wandb</code> to <code class="language-plaintext highlighter-rouge">train_static_target.py</code> to enable it)</li>
+</ul>
+
+<h2 id="running-the-code">Running the Code</h2>
+
+<p>Example training command for DAIS baseline:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python train_static_target.py <span class="se">\</span>
+<span class="nt">--path</span>  <span class="se">\</span>
+<span class="nt">--log_interval</span> 100 <span class="se">\</span>
+<span class="nt">--lrate</span> 0.01 <span class="se">\</span>
+<span class="nt">--batch-size</span> 64 <span class="se">\ </span>
+<span class="nt">--epochs</span> 500 <span class="se">\</span>
+<span class="nt">--max_iterations_per_epoch</span> 10 <span class="se">\ </span>
+<span class="nt">--zdim</span> 50 <span class="se">\</span>
+<span class="nt">--n_particles</span> 32 <span class="se">\ </span>
+<span class="nt">--n_transitions</span> 32 <span class="se">\ </span>
+<span class="nt">--deltas_nn_output_scale</span> 0.25 <span class="se">\ </span>
+<span class="nt">--variational_augmentation</span> UHA
+</code></pre></div></div>
+
+<p>The proposed Differentiable Sequential Monte Carlo Sampler can be run by adding</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">--dsmcs --resampling no</code> (no resampling)</li>
+  <li><code class="language-plaintext highlighter-rouge">--dsmcs --resampling cat</code> (categorical resampling, without gradient)</li>
+  <li><code class="language-plaintext highlighter-rouge">--dsmcs --resampling gst</code> (Gapped Gumbel Softmax resampling, with gradient)</li>
+</ul>
+
+<p>Additionally, the “Bernoulli-decision” models are available by <code class="language-plaintext highlighter-rouge">--resampling bern-cat</code> and <code class="language-plaintext highlighter-rouge">--resampling bern-gst</code></p>
+
+<h2 id="license">License</h2>
+<p>Distributed under the MIT License. See <code class="language-plaintext highlighter-rouge">LICENSE.MIT</code> for more information.</p>
+
+<h2 id="citation">Citation:</h2>
+<p>Following is the Bibtex if you would like to cite our paper :</p>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zenn2023resampling</span><span class="p">,</span>
+  <span class="na">author</span>       <span class="p">=</span> <span class="s">{Johannes Zenn and Robert Bamler}</span><span class="p">,</span>
+  <span class="na">title</span>        <span class="p">=</span> <span class="s">{Resampling Gradients Vanish in Differentiable Sequential Monte Carlo Samplers}</span><span class="p">,</span>
+  <span class="na">booktitle</span>    <span class="p">=</span> <span class="s">{The First Tiny Papers Track at {ICLR} 2023, Tiny Papers @ {ICLR} 2023, Kigali, Rwanda, May 5, 2023}</span><span class="p">,</span>
+  <span class="na">year</span>         <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">url</span>          <span class="p">=</span> <span class="s">{https://openreview.net/pdf?id=kBkou5ucR\_d}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>(back to top)</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    <!-- 
+      <li><strong>Follow:</strong></li>
+     -->
+
+    
+      
+        
+          <li>
+            <a href="mailto:johannes.zenn@gmail.com" rel="nofollow noopener noreferrer">
+              <i class="fas fa-fw fa-envelope" style="color: #ffffff;" aria-hidden="true"></i> Mail
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://scholar.google.de/citations?user=QYZmWP8AAAAJ&hl=en" rel="nofollow noopener noreferrer">
+              <i class="fas fa-fw fa-graduation-cap" style="color: #ffffff;" aria-hidden="true"></i> Scholar
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/jzenn" rel="nofollow noopener noreferrer">
+              <i class="fab fa-fw fa-github" style="color: #ffffff;" aria-hidden="true"></i> Github
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://bsky.app/profile/johanneszenn.bsky.social" rel="nofollow noopener noreferrer">
+              <i class="custom-bluesky-icon-white" style="color: #ffffff;" aria-hidden="true"></i> Bluesky
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://x.com/johanneszenn" rel="nofollow noopener noreferrer">
+              <i class="fab fa-fw fa-twitter-square" style="color: #ffffff;" aria-hidden="true"></i> X / Twitter
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://linkedin.com/in/johannes-zenn/" rel="nofollow noopener noreferrer">
+              <i class="fab fa-fw fa-linkedin-in" style="color: #ffffff;" aria-hidden="true"></i> LinkedIn
+            </a>
+          </li>
+        
+      
+    
+
+    <!-- 
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+     -->
+  </ul>
+</div>
+
+<!-- <div class="page__footer-copyright">&copy; 2024 Johannes Zenn. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div> -->
+
+<div class="page__footer-copyright">&copy; 2024 Johannes Zenn. Powered by 
+  <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; 
+  <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+  <a href="/privacy">Privacy Statement</a>.
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

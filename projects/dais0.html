@@ -1,0 +1,539 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.18.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Initial Distribution of Differentiable Annealed Importance Sampling for Inference - Johannes Zenn</title>
+<meta name="description" content="Personal Website of Johannes Zenn">
+
+
+  <meta name="author" content="Johannes Zenn">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Johannes Zenn">
+<meta property="og:title" content="Initial Distribution of Differentiable Annealed Importance Sampling for Inference">
+<meta property="og:url" content="http://localhost:4000/projects/dais0">
+
+
+  <meta property="og:description" content="Personal Website of Johannes Zenn">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/projects/dais0">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Johannes Zenn",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Johannes Zenn Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#074161">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- scripts -->
+<script src="/assets/js/clipboard.js"></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single_without_title">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Johannes Zenn
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/publications">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cv">CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="http://localhost:4000//" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/projects" itemprop="item"><span itemprop="name">Projects</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Initial Distribution of Differentiable Annealed Importance Sampling for Inference</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/bio-photo-j.jpg" alt="Johannes Zenn" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Johannes Zenn</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>PhD Student in Machine Learning @ University of Tübingen &amp; IMPRS-IS</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Tübingen, Germany</span>
+        </li>
+      
+
+      
+        
+          <li>
+            <a href="mailto:johannes.zenn@gmail.com" rel="nofollow noopener noreferrer">
+                <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+              <span class="label">Mail</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://scholar.google.de/citations?user=QYZmWP8AAAAJ&hl=en" rel="nofollow noopener noreferrer">
+                <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
+              <span class="label">Scholar</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/jzenn" rel="nofollow noopener noreferrer">
+                <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://bsky.app/profile/johanneszenn.bsky.social" rel="nofollow noopener noreferrer">
+                <i class="custom-bluesky-icon" aria-hidden="true"></i>
+              <span class="label">Bluesky</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://x.com/johanneszenn" rel="nofollow noopener noreferrer">
+                <i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i>
+              <span class="label">X / Twitter</span>
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://linkedin.com/in/johannes-zenn/" rel="nofollow noopener noreferrer">
+                <i class="fab fa-fw fa-linkedin-in" aria-hidden="true"></i>
+              <span class="label">LinkedIn</span>
+            </a>
+          </li>
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <!-- <meta itemprop="headline" content="Initial Distribution of Differentiable Annealed Importance Sampling for Inference"> -->
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <!-- <h1 id="page-title" class="page__title" itemprop="headline">Initial Distribution of Differentiable Annealed Importance Sampling for Inference
+</h1> -->
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>You can find the code for this project <a href="https://github.com/jzenn/dais0">here</a>.</p>
+
+<h1 id="differentiable-annealed-importance-sampling-minimizes-the-symmetrized-kullback-leibler-divergence-between-initial-and-target-distribution-icml-2024">Differentiable Annealed Importance Sampling Minimizes The Symmetrized Kullback-Leibler Divergence Between Initial and Target Distribution <a href="https://arxiv.org/abs/2405.14840">(ICML 2024)</a></h1>
+
+<p><a href="https://arxiv.org/abs/2405.14840"><img src="https://img.shields.io/badge/Paper-PDF-red?style=flat&amp;logo=arXiv&amp;logoColor=red" alt="arxiv-link" /></a>
+  <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/Made%20with-PyTorch-brightgreen" alt="made-with-pytorch" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a></p>
+
+<p>Johannes Zenn   ·  
+  Robert Bamler</p>
+
+<h2 id="about-the-project">About The Project</h2>
+<p>This is the official GitHub repository for our work <a href="https://arxiv.org/abs/2405.14840">Differentiable Annealed Importance Sampling Minimizes The Symmetrized Kullback-Leibler Divergence Between Initial and Target Distribution</a> where we investigate the initial distribution of differentiable annealed importance sampling (DAIS) for inference.</p>
+
+<p>&gt;Differentiable annealed importance sampling (DAIS), proposed by Geffner &amp; Domke (2021) and Zhang et al. (2021), allows optimizing over the initial distribution of AIS. In this paper, we show that, in the limit of many transitions, DAIS minimizes the symmetrized Kullback-Leibler divergence between the initial and target distribution. Thus, DAIS can be seen as a form of variational inference (VI) as its initial distribution is a parametric fit to an intractable target distribution. We empirically evaluate the usefulness of the initial distribution as a variational distribution on synthetic and real-world data, observing that it often provides more accurate uncertainty estimates than VI (optimizing the reverse KL divergence), importance weighted VI, and Markovian score climbing (optimizing the forward KL divergence).</p>
+
+<p>The code base was heavily extended and rewritten based on the DAIS code base by Zhang et al. (2021) which was taken from their <a href="https://openreview.net/forum?id=6rqjgrL7Lq">OpenReview submission</a>.
+The baseline for Markovian Score Climbing (Naesseth et al., 2020) was taken from the <a href="https://github.com/blei-lab/markovian-score-climbing/tree/main">original repository</a>.</p>
+
+<h2 id="environment">Environment:</h2>
+
+<ul>
+  <li>tested with Python 3.10 (a lower version might work as well);</li>
+  <li>dependencies can be found in <code class="language-plaintext highlighter-rouge">requirements.txt</code></li>
+</ul>
+
+<h2 id="running-the-code">Running the Code</h2>
+
+<p>Example training command for some logistic regression baseline:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python train_logistic_regression.py <span class="se">\</span>
+  <span class="nt">--batch_size</span> 128 <span class="se">\</span>
+  <span class="nt">--n_particles</span> 16 <span class="se">\</span>
+  <span class="nt">--n_transitions</span> 16 <span class="se">\</span>
+  <span class="nt">--scaled_M</span> <span class="se">\</span>
+  <span class="nt">--max_iterations</span> 10_000 <span class="se">\</span>
+  <span class="nt">--lr</span> 1e-3 <span class="se">\</span>
+  <span class="nt">--dataset</span> ionosphere <span class="se">\</span>
+  <span class="nt">--data_path</span>  <span class="se">\</span>
+  <span class="nt">--path_to_save</span> 
+</code></pre></div></div>
+
+<h2 id="license">License</h2>
+<p>Distributed under the MIT License. See <code class="language-plaintext highlighter-rouge">LICENSE.MIT</code> for more information.</p>
+
+<h2 id="citation">Citation:</h2>
+<p>Following is the Bibtex if you would like to cite our paper :</p>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">zenn2024differentiable</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Differentiable Annealed Importance Sampling Minimizes The Symmetrized {K}ullback-{L}eibler Divergence Between Initial and Target Distribution}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zenn, Johannes and Bamler, Robert}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Forty-first International Conference on Machine Learning (ICML)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://openreview.net/pdf?id=rvaN2P1rvC}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>(back to top)</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    <!-- 
+      <li><strong>Follow:</strong></li>
+     -->
+
+    
+      
+        
+          <li>
+            <a href="mailto:johannes.zenn@gmail.com" rel="nofollow noopener noreferrer">
+              <i class="fas fa-fw fa-envelope" style="color: #ffffff;" aria-hidden="true"></i> Mail
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://scholar.google.de/citations?user=QYZmWP8AAAAJ&hl=en" rel="nofollow noopener noreferrer">
+              <i class="fas fa-fw fa-graduation-cap" style="color: #ffffff;" aria-hidden="true"></i> Scholar
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://github.com/jzenn" rel="nofollow noopener noreferrer">
+              <i class="fab fa-fw fa-github" style="color: #ffffff;" aria-hidden="true"></i> Github
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://bsky.app/profile/johanneszenn.bsky.social" rel="nofollow noopener noreferrer">
+              <i class="custom-bluesky-icon-white" style="color: #ffffff;" aria-hidden="true"></i> Bluesky
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://x.com/johanneszenn" rel="nofollow noopener noreferrer">
+              <i class="fab fa-fw fa-twitter-square" style="color: #ffffff;" aria-hidden="true"></i> X / Twitter
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="https://linkedin.com/in/johannes-zenn/" rel="nofollow noopener noreferrer">
+              <i class="fab fa-fw fa-linkedin-in" style="color: #ffffff;" aria-hidden="true"></i> LinkedIn
+            </a>
+          </li>
+        
+      
+    
+
+    <!-- 
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+     -->
+  </ul>
+</div>
+
+<!-- <div class="page__footer-copyright">&copy; 2024 Johannes Zenn. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div> -->
+
+<div class="page__footer-copyright">&copy; 2024 Johannes Zenn. Powered by 
+  <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; 
+  <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
+  <a href="/privacy">Privacy Statement</a>.
+</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
